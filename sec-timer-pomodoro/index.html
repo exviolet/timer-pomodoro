@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/sec-timer-pomodoro/public/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer Pomodoro</title>
+    <link rel="stylesheet" href="/sec-timer-pomodoro/src/styles/main.css">
+    <script src="/sec-timer-pomodoro/src/scripts/app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-timer">
+        <line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/>
+        <circle cx="12" cy="14" r="8"/></svg>
+      <h1>Pomodoro Timer</h1>
+      <hr>
+      <div class="timer">
+        <span id="minutes">25</span>:<span id="seconds">00</span>
+      </div>
+      <div class="controls">
+        <button id="start">Старт</button>
+        <button id="pause">Пауза</button>
+        <button id="reset">Сброс</button>
+      </div>
+      <hr>
+      <div class="settings">
+        <label for="work-time">Работа (мин):</label>
+        <input type="number" id="work-time" value="25" min="1">
+        <hr>
+        <label for="break-time">Перерыв (мин):</label>
+        <input type="number" id="break-time" value="5" min="1">
+      </div>
+    </div>
+  </body>
+</html>
